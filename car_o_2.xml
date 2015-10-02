@@ -1,0 +1,314 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+<SimMechanicsImportXML version="1.0" xmlns="urn:mathworks:simmechanics:import" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+<Created by="" on="10/02/15||11:01:24" using="SimMechanics Link Version 4.7" from="SolidWorks 23.4.0"/>
+<ModelUnits mass="kilogram" length="millimeter"/>
+<DataUnits mass="kilogram" length="meter"/>
+<RootAssembly name="car_o_2" uid="car_o_2" version="181">
+<AssemblyFile name="car_o_2.SLDASM" type="SolidWorks Assembly"/>
+<InstanceTree>
+<Instance name="beautiful_carbody-1" uid="beautiful_carbody-1" grounded="true" entityUid="beautiful_carbody*:*Default">
+<Transform>
+<Rotation>1 0 0 0 1 0 0 0 1</Rotation>
+<Translation>0 0 0</Translation>
+</Transform>
+</Instance>
+<Instance name="beautiful_wheel-4" uid="beautiful_wheel-4" entityUid="beautiful_wheel*:*Default">
+<Transform>
+<Rotation>0.99690035772585972 0.064713671497301256 -0.044741675062436703 0.078674498829374773 -0.81999991388983695 0.56693074043890646 0 -0.56869348681165621 -0.82254952316441132</Rotation>
+<Translation>-0.15375000000000003 0.11 -0.0024999999999999736</Translation>
+</Transform>
+</Instance>
+<Instance name="beautiful_wheel-2" uid="beautiful_wheel-2" entityUid="beautiful_wheel*:*Default">
+<Transform>
+<Rotation>0.99912682733344127 0.037714843027483839 0.017977027508018169 0.041780173558899777 -0.90190892587620408 -0.42990081009718956 0 0.43027651578983939 -0.90269713634183857</Rotation>
+<Translation>0.1537499999999993 -0.11000000000000154 -0.0024999999999991201</Translation>
+</Transform>
+</Instance>
+<Instance name="wheel_gear-1" uid="wheel_gear-1" entityUid="wheel_gear*:*Default">
+<Transform>
+<Rotation>0.99912682733344149 0.041780173558900131 0 0.041780173558900131 -0.99912682733344149 0 0 0 -1</Rotation>
+<Translation>0.15374999999999989 -0.11000000000000007 0.065000000000000016</Translation>
+</Transform>
+</Instance>
+<Instance name="beautiful_wheel-3" uid="beautiful_wheel-3" entityUid="beautiful_wheel*:*Default">
+<Transform>
+<Rotation>-0.97702015919934682 -0.14589958821702048 -0.15538635292774874 0.21314691768374933 -0.66877269657923133 -0.71225800928600325 0 -0.72901055580028962 0.68450245399980314</Rotation>
+<Translation>0.15374999999999991 0.10999999999999999 -0.0024999999999999606</Translation>
+</Transform>
+</Instance>
+<Instance name="wheel_gear-4" uid="wheel_gear-4" entityUid="wheel_gear*:*Default">
+<Transform>
+<Rotation>-0.99859783690703796 -0.052937322604990053 0 -0.052937322604990053 0.99859783690703796 0 0 0 -0.99999999999999989</Rotation>
+<Translation>-0.15375 -0.11000000000000004 0.065000000000000016</Translation>
+</Transform>
+</Instance>
+<Instance name="wheel_gear-3" uid="wheel_gear-3" entityUid="wheel_gear*:*Default">
+<Transform>
+<Rotation>-0.9969003577258595 -0.078674498829374565 0 -0.078674498829374565 0.9969003577258595 0 0 0 -1</Rotation>
+<Translation>-0.15375 0.11000000000000004 0.065000000000000016</Translation>
+</Transform>
+</Instance>
+<Instance name="beautiful_wheel-5" uid="beautiful_wheel-5" entityUid="beautiful_wheel*:*Default">
+<Transform>
+<Rotation>0.99859783690703796 0.016949830112754961 0.050150407612834735 0.052937322604989449 -0.31973781169173682 -0.94602609459253006 0 0.94735444002428582 -0.32018676575753691</Rotation>
+<Translation>-0.15375 -0.1100000000000001 -0.0024999999999999745</Translation>
+</Transform>
+</Instance>
+<Instance name="wheel_gear-2" uid="wheel_gear-2" entityUid="wheel_gear*:*Default">
+<Transform>
+<Rotation>-0.97702015919934693 0.21314691768374933 0 0.21314691768374933 0.97702015919934693 0 0 0 -0.99999999999999989</Rotation>
+<Translation>0.15374999999999991 0.11000000000000001 0.065000000000000016</Translation>
+</Transform>
+</Instance>
+</InstanceTree>
+<Constraints>
+<Coincident name="Coincident3">
+<ConstraintGeometry geomType="circle">
+<InstancePath>
+<Uid>beautiful_carbody-1</Uid>
+</InstancePath>
+<Position>0.15374999999999989 -0.11000000000000008 0.065000000000000016</Position>
+<Axis>0 0 -1</Axis>
+</ConstraintGeometry>
+<ConstraintGeometry geomType="circle">
+<InstancePath>
+<Uid>wheel_gear-1</Uid>
+</InstancePath>
+<Position>0 0 0</Position>
+<Axis>0 0 1</Axis>
+</ConstraintGeometry>
+</Coincident>
+<Concentric name="Concentric2">
+<ConstraintGeometry geomType="cylinder">
+<InstancePath>
+<Uid>wheel_gear-1</Uid>
+</InstancePath>
+<Position>0.032500000000000029 0 0.067499999999999991</Position>
+<Axis>-1.0000000000000002 0 0</Axis>
+</ConstraintGeometry>
+<ConstraintGeometry geomType="circle">
+<InstancePath>
+<Uid>beautiful_wheel-2</Uid>
+</InstancePath>
+<Position>0 0 0</Position>
+<Axis>-1 0 0</Axis>
+</ConstraintGeometry>
+</Concentric>
+<Coincident name="Coincident4">
+<ConstraintGeometry geomType="plane">
+<InstancePath>
+<Uid>wheel_gear-1</Uid>
+</InstancePath>
+<Position>0 0 0</Position>
+<Axis>1.0000000000000002 0 0</Axis>
+</ConstraintGeometry>
+<ConstraintGeometry geomType="plane">
+<InstancePath>
+<Uid>beautiful_wheel-2</Uid>
+</InstancePath>
+<Position>0 0 0</Position>
+<Axis>1 0 0</Axis>
+</ConstraintGeometry>
+</Coincident>
+<Coincident name="Coincident5">
+<ConstraintGeometry geomType="circle">
+<InstancePath>
+<Uid>beautiful_carbody-1</Uid>
+</InstancePath>
+<Position>0.15374999999999994 0.11 0.065000000000000016</Position>
+<Axis>0 0 -1</Axis>
+</ConstraintGeometry>
+<ConstraintGeometry geomType="circle">
+<InstancePath>
+<Uid>wheel_gear-2</Uid>
+</InstancePath>
+<Position>0 0 0</Position>
+<Axis>0 0 0.99999999999999989</Axis>
+</ConstraintGeometry>
+</Coincident>
+<Coincident name="Coincident6">
+<ConstraintGeometry geomType="circle">
+<InstancePath>
+<Uid>beautiful_carbody-1</Uid>
+</InstancePath>
+<Position>-0.15375 0.11000000000000004 0.065000000000000016</Position>
+<Axis>0 0 -1</Axis>
+</ConstraintGeometry>
+<ConstraintGeometry geomType="circle">
+<InstancePath>
+<Uid>wheel_gear-3</Uid>
+</InstancePath>
+<Position>0 0 0</Position>
+<Axis>0 0 1</Axis>
+</ConstraintGeometry>
+</Coincident>
+<Coincident name="Coincident7">
+<ConstraintGeometry geomType="circle">
+<InstancePath>
+<Uid>beautiful_carbody-1</Uid>
+</InstancePath>
+<Position>-0.15375 -0.11000000000000004 0.065000000000000016</Position>
+<Axis>0 0 -1</Axis>
+</ConstraintGeometry>
+<ConstraintGeometry geomType="circle">
+<InstancePath>
+<Uid>wheel_gear-4</Uid>
+</InstancePath>
+<Position>0 0 0</Position>
+<Axis>0 0 0.99999999999999989</Axis>
+</ConstraintGeometry>
+</Coincident>
+<Coincident name="Coincident9">
+<ConstraintGeometry geomType="plane">
+<InstancePath>
+<Uid>wheel_gear-2</Uid>
+</InstancePath>
+<Position>0 0 0</Position>
+<Axis>1.0000000000000002 0 0</Axis>
+</ConstraintGeometry>
+<ConstraintGeometry geomType="plane">
+<InstancePath>
+<Uid>beautiful_wheel-3</Uid>
+</InstancePath>
+<Position>0 0 0</Position>
+<Axis>1 0 0</Axis>
+</ConstraintGeometry>
+</Coincident>
+<Concentric name="Concentric4">
+<ConstraintGeometry geomType="cylinder">
+<InstancePath>
+<Uid>wheel_gear-2</Uid>
+</InstancePath>
+<Position>0.032500000000000015 0 0.067499999999999963</Position>
+<Axis>-1.0000000000000002 0 0</Axis>
+</ConstraintGeometry>
+<ConstraintGeometry geomType="circle">
+<InstancePath>
+<Uid>beautiful_wheel-3</Uid>
+</InstancePath>
+<Position>0 0 0</Position>
+<Axis>-1 0 0</Axis>
+</ConstraintGeometry>
+</Concentric>
+<Coincident name="Coincident10">
+<ConstraintGeometry geomType="plane">
+<InstancePath>
+<Uid>wheel_gear-3</Uid>
+</InstancePath>
+<Position>0 0 0</Position>
+<Axis>1 0 0</Axis>
+</ConstraintGeometry>
+<ConstraintGeometry geomType="plane">
+<InstancePath>
+<Uid>beautiful_wheel-4</Uid>
+</InstancePath>
+<Position>0 0 0</Position>
+<Axis>1.0000000000000002 0 0</Axis>
+</ConstraintGeometry>
+</Coincident>
+<Concentric name="Concentric5">
+<ConstraintGeometry geomType="cylinder">
+<InstancePath>
+<Uid>wheel_gear-3</Uid>
+</InstancePath>
+<Position>0.032500000000000001 0 0.067499999999999991</Position>
+<Axis>-1 0 0</Axis>
+</ConstraintGeometry>
+<ConstraintGeometry geomType="circle">
+<InstancePath>
+<Uid>beautiful_wheel-4</Uid>
+</InstancePath>
+<Position>0 0 0</Position>
+<Axis>-1.0000000000000002 0 0</Axis>
+</ConstraintGeometry>
+</Concentric>
+<Concentric name="Concentric6">
+<ConstraintGeometry geomType="cylinder">
+<InstancePath>
+<Uid>wheel_gear-4</Uid>
+</InstancePath>
+<Position>0.032500000000000001 0 0.067499999999999963</Position>
+<Axis>-1 0 0</Axis>
+</ConstraintGeometry>
+<ConstraintGeometry geomType="circle">
+<InstancePath>
+<Uid>beautiful_wheel-5</Uid>
+</InstancePath>
+<Position>0 0 0</Position>
+<Axis>-1.0000000000000002 0 0</Axis>
+</ConstraintGeometry>
+</Concentric>
+<Coincident name="Coincident11">
+<ConstraintGeometry geomType="plane">
+<InstancePath>
+<Uid>wheel_gear-4</Uid>
+</InstancePath>
+<Position>0 0 0</Position>
+<Axis>1 0 0</Axis>
+</ConstraintGeometry>
+<ConstraintGeometry geomType="plane">
+<InstancePath>
+<Uid>beautiful_wheel-5</Uid>
+</InstancePath>
+<Position>0 0 0</Position>
+<Axis>1.0000000000000002 0 0</Axis>
+</ConstraintGeometry>
+</Coincident>
+</Constraints>
+</RootAssembly>
+<Assemblies>
+</Assemblies>
+<Parts>
+<Part name="beautiful_carbody" uid="beautiful_carbody*:*Default" version="528">
+<ModelUnits mass="kilogram" length="millimeter"/>
+<PartFile name="beautiful_carbody.SLDPRT" type="SolidWorks Part"/>
+<MassProperties>
+<Mass>52.511110687372359</Mass>
+<CenterOfMass>1.4067472375466708e-007 -0.012761133130959591 0.0099618109242144235</CenterOfMass>
+<Inertia>1.1600954007297355 0.32928780393335905 1.4188122939400047 0.01722898120809252 -4.0366413577148091e-007 -1.3367537395703008e-006</Inertia>
+</MassProperties>
+<GeometryFile name="beautiful_carbody_Default_sldprt.STEP" type="STEP"/>
+<VisualProperties>
+<Ambient r="0.65098039215686276" g="0.61960784313725492" b="0.58823529411764708" a="1"/>
+<Diffuse r="0.65098039215686276" g="0.61960784313725492" b="0.58823529411764708" a="1"/>
+<Specular r="0.52078432148578124" g="0.49568628189610503" b="0.47058824230642882" a="1"/>
+<Emissive r="0" g="0" b="0" a="1"/>
+<Shininess>0.10000000149011612</Shininess>
+</VisualProperties>
+</Part>
+<Part name="beautiful_wheel" uid="beautiful_wheel*:*Default" version="447">
+<ModelUnits mass="kilogram" length="millimeter"/>
+<PartFile name="beautiful_wheel.SLDPRT" type="SolidWorks Part"/>
+<MassProperties>
+<Mass>0.30120660918036385</Mass>
+<CenterOfMass>0 3.4297101535561586e-007 0</CenterOfMass>
+<Inertia>0.00032075645784594432 0.00020913809763795617 0.00020913809760252533 0 1.4078376072953918e-009 0</Inertia>
+</MassProperties>
+<GeometryFile name="beautiful_wheel_Default_sldprt.STEP" type="STEP"/>
+<VisualProperties>
+<Ambient r="0.90196078431372551" g="0.92156862745098034" b="0.92156862745098034" a="1"/>
+<Diffuse r="0.90196078431372551" g="0.92156862745098034" b="0.92156862745098034" a="1"/>
+<Specular r="0.90196078431372551" g="0.92156862745098034" b="0.92156862745098034" a="1"/>
+<Emissive r="0" g="0" b="0" a="1"/>
+<Shininess>0.3125</Shininess>
+</VisualProperties>
+</Part>
+<Part name="wheel_gear" uid="wheel_gear*:*Default" version="422">
+<ModelUnits mass="kilogram" length="millimeter"/>
+<PartFile name="wheel_gear.SLDPRT" type="SolidWorks Part"/>
+<MassProperties>
+<Mass>0.03608616964863838</Mass>
+<CenterOfMass>0 0 0.0086554815626847491</CenterOfMass>
+<Inertia>1.5613913995239713e-005 1.7518353110624566e-005 1.9440118282396505e-005 0 0 0</Inertia>
+</MassProperties>
+<GeometryFile name="wheel_gear_Default_sldprt.STEP" type="STEP"/>
+<VisualProperties>
+<Ambient r="0.83921568627450982" g="0.46666666666666667" b="0.36862745098039218" a="1"/>
+<Diffuse r="0.83921568627450982" g="0.46666666666666667" b="0.36862745098039218" a="1"/>
+<Specular r="0.58745098039215682" g="0.32666666666666666" b="0.25803921568627453" a="1"/>
+<Emissive r="0" g="0" b="0" a="1"/>
+<Shininess>0.3125</Shininess>
+</VisualProperties>
+</Part>
+</Parts>
+</SimMechanicsImportXML>
